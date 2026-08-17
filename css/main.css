@@ -74,16 +74,18 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
 }
 
 .about-me-photo {
-  width: 100%;
+  width: 50%;
   background: var(--color-tint);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-full);
 }
 
 .about-me-title {
+  font-family: var(--font-family-title);
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
@@ -91,10 +93,42 @@ section {
   margin: 1rem 0 0 0;
 }
 
-.about-me-description {
+.specification {
+  width: 100%;
+  font-family: var(--font-family-mono);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.specification tbody tr {
+  width: 100%;
+}
+
+.specification td {
+  border-bottom: 1px solid var(--color-separator);
+  padding: var(--space-3) 0;
+  max-width: 50%;
+}
+
+.specification tr th {
   color: var(--color-label-secondary);
+  font-weight: 300;
   text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0;
+  padding-bottom: var(--space-3);
+  width: 280px;
+  border-bottom: 1px solid var(--color-separator);
+}
+
+.specification tr td:first-child {
+  color: var(--color-label-secondary);
+}
+
+.specification tr td:last-child {
+  text-align: right;
+}
+
+.specification tr:last-child td:last-child {
+  color: var(--color-label-secondary);
 }

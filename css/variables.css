@@ -18,6 +18,7 @@
      ШРИФТЫ: семейства
      ------------------------------------------------------------------------ */
   --font-family-text: "Inter", sans-serif;
+  --font-family-title: "Nunito Sans", sans-serif;
   --font-family-mono: "JetBrains Mono", monospace;
 
   --header-height: clamp(3rem, 3rem + 0.17vi, 4.5rem);
