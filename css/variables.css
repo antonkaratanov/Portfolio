@@ -17,12 +17,8 @@
   /* ------------------------------------------------------------------------
      ШРИФТЫ: семейства
      ------------------------------------------------------------------------ */
-  --font-family-display: -apple-system, BlinkMacSystemFont, "SF Pro Display",
-    "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-  --font-family-text: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-    "Helvetica Neue", Arial, sans-serif;
-  --font-family-mono: "SF Mono", ui-monospace, "Menlo", "Consolas",
-    "Liberation Mono", monospace;
+  --font-family-text: "Inter", sans-serif;
+  --font-family-mono: "JetBrains Mono", monospace;
 
   --header-height: clamp(3rem, 3rem + 0.17vi, 4.5rem);
   --content-max-width: 75rem;
