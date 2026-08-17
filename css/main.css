@@ -70,12 +70,12 @@ section {
 }
 
 .aboutme-content {
-  margin-top: 2rem;
+  margin-top: var(--space-3);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-3);
 }
 
 .about-me-photo {
@@ -141,4 +141,30 @@ section {
 
 .specification tfoot {
   color: var(--color-label-tertiary);
+}
+
+.to-projects-btn {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: var(--space-4) 0;
+  border: 1px solid var(--color-separator);
+  border-radius: var(--radius-lg);
+  color: var(--color-label-on-tint);
+  background: var(--color-tint);
+  transition: background var(--duration-fast) var(--ease-decelerate),
+  color var(--duration-fast) var(--ease-decelerate),
+  transform var(--duration-fast) var(--ease-decelerate);
+}
+
+.to-projects-btn:hover {
+  background: var(--color-background-primary);
+  color: var(--color-label-primary);
+  transform: scale(1.015);
+}
+
+.to-projects-btn:active {
+  background: var(--color-background-primary);
+  color: var(--color-label-primary);
+  transform: scale(1.015);
 }
