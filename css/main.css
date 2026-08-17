@@ -59,7 +59,7 @@ logo:active {
 }
 
 section {
-  height: 100dvh;
+  min-height: 100dvh;
   padding-top: var(--header-height);
 }
 
@@ -75,7 +75,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .about-me-photo {
@@ -89,8 +89,6 @@ section {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: var(--space-4);
-  margin: 1rem 0 0 0;
 }
 
 .specification {
@@ -99,36 +97,48 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--space-4);
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-separator-opaque);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4);
 }
 
+.specification thead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--color-label-tertiary);
+}
 
-.specification tbody tr {
+.specification tbody {
   width: 100%;
 }
 
-.specification td {
+.specification tbody tr:first-child {
+  border-top: 1px solid var(--color-separator);
+}
+
+.specification tbody tr {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid var(--color-separator);
+}
+
+.specification tbody tr td {
   padding: var(--space-3) 0;
-  max-width: 50%;
 }
 
-.specification tr th {
-  color: var(--color-label-secondary);
-  font-weight: 300;
-  text-align: center;
-  padding-bottom: var(--space-3);
-  width: 280px;
-  border-bottom: 1px solid var(--color-separator);
-}
-
-.specification tr td:first-child {
+.specification tbody tr td:first-child {
   color: var(--color-label-secondary);
 }
 
-.specification tr td:last-child {
+.specification tbody tr td:last-child {
   text-align: right;
 }
 
-.specification tr:last-child td:last-child {
-  color: var(--color-label-secondary);
+.specification tfoot {
+  color: var(--color-label-tertiary);
 }
